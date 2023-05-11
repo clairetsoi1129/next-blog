@@ -18,23 +18,23 @@ const Sidebar = (props: Props) => {
       </div>
       <Subscribe />
       <Image
-        className="hidden md:block my-8 w-full"
-        alt="advert-2"
-        placeholder="blur"
-        src={Ad2}
-        width={500}
-        height={1000}
+          className="hidden md:block my-8 w-full"
+          alt="advert-2"
+          placeholder="blur"
+          src={Ad2}
+          style={{width: "500px", height: "250px", objectFit: "cover"}}
       />
       <h4 className="bg-wh-900 py-3 px-5 text-wh-50 text-xs font-bold text-center">
         About the Blog
       </h4>
       <div className="flex justify-center my-3">
-        <Image
+      <Image
+          className="hidden md:block my-8 w-full"
           alt="about-profile"
           placeholder="blur"
           src={AboutProfile}
-          style={{ width: "500px", height: "250px", objectFit: "cover" }}
-        />
+          style={{width: "500px", height: "250px", objectFit: "cover"}}
+      />
       </div>
       <h4 className="py-3 px-5 text-wh-500 font-bold text-center">
         Geoffrey Epstein
