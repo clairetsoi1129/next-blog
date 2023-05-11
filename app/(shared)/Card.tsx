@@ -33,22 +33,20 @@ const Card = ({
       >
         <div className={`relative w-auto mb-3 ${imageHeight}`}>
           <Image
-              fill
-              alt="tech"
-              placeholder="blur"
-              src={image}
-              sizes="(max-width: 480px) 100vw,
+            fill
+            alt="tech"
+            placeholder="blur"
+            src={image}
+            sizes="(max-width: 480px) 100vw,
                   (max-width: 768px) 75vw,
                   (max-width: 1060px) 50vw,
                   33vw"
-              style={{objectFit: "cover"}}
+            style={{ objectFit: "cover" }}
           />
         </div>
       </Link>
       <div className="basis-full">
-        <Link 
-            href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
-        >
+        <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
           <h4
             className={`font-bold hover:text-accent-green
             ${isSmallCard ? "text-base" : "text-lg"}
@@ -63,6 +61,7 @@ const Card = ({
           <h5 className="font-semibold text-xs">{author}</h5>
           <h6 className="text-wh-300 text-xs">{formattedDate}</h6>
         </div>
+
         <p
           className={`text-wh-500 ${
             isLongForm ? "line-clamp-5" : "line-clamp-3"
